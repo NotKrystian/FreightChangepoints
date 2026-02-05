@@ -60,7 +60,7 @@ The pipeline consists of five main stages:
 ### Signal Generation
 
 ```
-Net Flow = Demand change − Supply change
+Net Flow = Demand change - Supply change
 ```
 
 ---
