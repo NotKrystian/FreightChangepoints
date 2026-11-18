@@ -1,9 +1,7 @@
 # **Ships: Preliminary Thoughts (Full)**
 
 
-
-#### **Project Outline:**
-
+## **Project Outline:**
 
 
 Investigate whether maritime vessel movements can provide useful information about changes in global oil supply, and whether this information can be used to predict movements in crude oil prices. (Could also be applied to gas tankers and prices).
@@ -17,9 +15,7 @@ Four main areas that can affect the arrival time of crude oil shipments are weat
 This project will investigate the relationship between these events, particularly those relating to maritime activity, and crude oil market behaviour.
 
 
-
-#### **Methodology:**
-
+## **Methodology:**
 
 
 * Data collection: Obtain large quantities of vessel tracking information, including positions, speeds, routes, arrival and departure times, and vessel draught (which can help indicate when a vessel is laden).
@@ -29,9 +25,7 @@ This project will investigate the relationship between these events, particularl
 * Using this framework, develop and backtest historical potential trading signals, accounting for transaction costs, execution delays, and external factors that may affect performance (weather, politics, etc.)
 
 
-
-#### **Data Inventory:**
-
+## **Data Inventory:**
 
 
 * **Vessel tracking data:** AIS vessel positions, vessel speed, heading, identity, characteristics, voyage information, port activity.  
@@ -43,21 +37,16 @@ Sources: TradingView, CME, NASDAQ Data Link?
 * **Supplementary Data:** Port traffic information (IMF Portwatch), Oil production and inventory levels (EIA, OPEC, satellite tracking for large storage tanks), Geopolitical events (public news and databases), Cargo information (Kpler, S\&P Global), Satellite observations (Copernicus, Sentinel-1)
 
 
-
 There is a concern with money required to access some of this data that I haven't taken into account, so alternatives may need to be considered.
-
 
 
 Datasets that are essential for backtesting are historical AIS data, crude oil prices, weather data, as well as port activity data. Cargo info may also help.
 
 
-
-#### **09/11 Meeting Requirements (Hypotheses, Instruments, Timeframe, Data)**
-
+## **09/11 Meeting Requirements (Hypotheses, Instruments, Timeframe, Data)**
 
 
 We now have several **hypotheses** to choose from:
-
 
 
 * Abnormal increases in tanker waiting times at export terminals or at chokepoints (Hormuz, Malacca, ...)
@@ -66,13 +55,10 @@ We now have several **hypotheses** to choose from:
 * A closer look at floating storage: an increase in floating storage could indicate oversupply or insufficient immediate demand, which could put downward pressure on prices, BUT if another scheduled transport is delayed, ships from floating storage could be used to fill the gap, meaning a drop in prices may not occur as expected. These are just two examples; there are many others.
 
 
-
 Out of these, floating storage, route diversion/supply allocation and investigation of chokepoints provide good opportunities for statistical inference, and each could have a noticeable effect on prices in their own right.
 
 
-
 The **instrument** to trade is Brent or WTI futures, although it remains to be seen whether to trade directionally or as a calendar spread.
-
 
 
 **Timeframe:** If studying chokepoints, most likely shorter-term, hours to days. Port waiting times may have a slightly longer impact horizon, as it may not be immediately apparent whether the delay is long enough to affect expected delivery date. (Also note that tankers do not publicly announce their scheduled time of arrival, so this would have to be estimated from expected time of arrival entered into AIS when the vessel departs.) Destination changes and floating storage could impact the market more gradually, as changes in offshore inventories can take longer to establish and relocating oil can take time. Potentially days to weeks.
